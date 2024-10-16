@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaeaea;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  /* border: 2px solid black; */
+  padding: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+  box-sizing: border-box;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+  background-color: #021526;
+  color: #eaeaea;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+}
+
+.download {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.download img {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.icons-sosmed {
+  display: flex;
+  width: 100%;
+  /* background-color: aliceblue; */
+  justify-content: center;
+  gap: 15px;
+}
+
+.icons-sosmed img {
+  width: 40px;
+  height: 40px;
+}
+
+.profile {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.profile .hero {
+  width: 300px;
+  /* margin: 50px; */
+  justify-content: center;
+  align-self: center;
+}
+
+.profile .hero img {
+  width: 100%;
+  display: block;
+}
+
+.profile .nama,
+.profile .bidang {
+  justify-content: center;
+  align-self: center;
+  margin: -15px;
+}
+
+.profile .nama {
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile .bidang {
+  font-weight: lighter;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
