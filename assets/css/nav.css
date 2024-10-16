@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: #f4f3f3;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+nav .logo img {
+  /* font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  color: rgb(233, 210, 255); */
+  /* height: 20px; */
+  width: 40px;
+}
+
+nav ul {
+  /* background-color: #333; */
+  width: 40%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+nav ul li a {
+  color: #333;
+}
+
+nav ul li:first-child {
+  font-weight: 700;
+}
+
+nav ul li:nth-child(2) {
+  font-weight: 400;
+}
+
+nav ul li:first-child a:hover {
+  font-weight: 800;
+  transition: 0.3;
+}
+
+nav ul li:nth-child(2) a:hover {
+  color: #0b192c;
+  font-weight: 500;
+  transition: 0.3;
+}
+
+nav .btn-submit {
+  /* background-color: #eaeaea; */
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  background-color: #433d8b;
+  color: white;
+  font-weight: 300;
+  border-radius: 20px;
+}
+
+nav .btn-submit:hover {
+  cursor: pointer;
+  background-color: #0b192c;
+  transition: 0.3s;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li button a {
+  color: white;
+}
