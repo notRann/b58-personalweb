@@ -27,24 +27,31 @@
 
     <h1>GET IN TOUCH</h1>
     <div class="container">
-      <form action="">
-        <label for="">Name</label>
-        <input type="text" / placeholder="masukan nama">
-        <label for="">Email</label>
-        <input type="text" / placeholder="masukan email">
-        <label for="">Phone number</label>
-        <input type="text" / placeholder="masukan nomor whatsapp">
-        <label for="">Subject</label>
-        <select name="" id="">
+      <form action="" onsubmit="sendToMail(event)">
+        <label for="input-name">Name</label>
+        <input type="text" / placeholder="masukan nama" id="input-name">
+        <label for="input-email">Email</label>
+        <input type="text" / placeholder="masukan email" id="input-email">
+        <label for="input-phone">Phone number</label>
+        <input type="text" / placeholder="masukan nomor whatsapp"
+        id="input-phone">
+        <label for="input-subject">Subject</label>
+        <select name="" id="input-subject">
           <option value="">-- select your job --</option>
           <option value="Fullstack Developer">Fullstack Developer</option>
           <option value="Frontend Developer">frontend Developer</option>
           <option value="Backend Developer">backend Developer</option>
         </select>
-        <label for="">Your Message</label>
-        <textarea name="" id="" cols="32" rows="5"></textarea>
+        <label for="input-message">Your Message</label>
+        <textarea name="" id="input-message" cols="32" rows="5"></textarea>
         <button class="btn-submit">Submit</button>
       </form>
     </div>
+
+    <a
+      href="mailto:${inputEmail}?subject=${inputSubject}&body=${encodeURIcomponent(inputMessage)}"
+    ></a>
+
+    <script src="js/contact.js"></script>
   </body>
 </html>
