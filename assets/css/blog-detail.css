@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+.blog-detail img {
+  width: 100%;
+  height: 400px;
+}
