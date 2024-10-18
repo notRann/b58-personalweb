@@ -3,11 +3,23 @@ body {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
+.blog-detail {
+  width: 900px;
   margin: 50px auto;
 }
-.blog-detail img {
-  width: 100%;
-  height: 400px;
+
+.blog-detail .blog-detail-container h1 {
+  text-align: center;
+}
+.author {
+  grid-area: content;
+}
+
+.blog-detail-container img {
+  grid-area: hero;
+}
+
+.blog-detail .blog-detail-container p {
+  grid-area: content;
+  text-align: justify;
 }

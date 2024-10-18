@@ -6,12 +6,13 @@
     <title>blog page</title>
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="assets/css/blog-list.css" />
   </head>
   <body>
     <nav>
       <div class="logo">
         <!-- <h4>Daffa Badran</h4> -->
-        <a href="#"><img src="assets/img/logo.png" alt="" /></a>
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
       </div>
 
       <ul>
@@ -31,7 +32,7 @@
         <form onsubmit="addBlog(event)">
           <label for="input-blog-title">Title</label>
           <input type="text" /id="input-blog-title">
-          <!-- <div class="date-area">
+          <div class="date-area">
             <div class="start-box">
               <label for="start-date">Start Date </label>
               <input type="text" id="start-date" />
@@ -40,7 +41,7 @@
               <label for="end-date">End Date</label>
               <input type="text" id="end-date" />
             </div>
-          </div> -->
+          </div>
           <label for="input-blog-content">Description</label>
           <textarea
             name=""
@@ -49,20 +50,20 @@
             rows="5"
           ></textarea>
 
-          <!-- <label for="">Technologies</label>
+          <label for="">Technologies</label>
           <div class="checkbox-area">
-            <label for="">Node Js </label>
-            <input type="checkbox" />
+            <label for="nodejs">Node Js </label>
+            <input type="checkbox" id="nodejs" />
 
-            <label for="">React Js</label>
-            <input type="checkbox" />
+            <label for="react">React Js</label>
+            <input type="checkbox" id="react" />
 
-            <label for="">Next Js</label>
-            <input type="checkbox" />
+            <label for="next">Next Js</label>
+            <input type="checkbox" id="next" />
 
-            <label for="TypeScript">TypeScript</label>
-            <input type="checkbox" />
-          </div> -->
+            <label for="typescript">TypeScript</label>
+            <input type="checkbox" id="typescript" />
+          </div>
 
           <label for="">Upload Image</label>
           <div class="upload-file">
@@ -78,6 +79,8 @@
 
     <br /><br /><br />
     <hr />
+
+    <div id="contents"></div>
 
     <script src="js/blog.js"></script>
   </body>
